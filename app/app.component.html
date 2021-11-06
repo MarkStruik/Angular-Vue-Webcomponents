@@ -1,0 +1,13 @@
+<h3>Hello, {{ name }}</h3>
+
+<p>
+  In index.html, a Vue component is defined using Vue and is wrapped into a Web
+  Component using vue-custom-element.<br />
+
+  Now, in Angular's template, use it as if it were a native HTML Element (or
+  regular native Web Component).
+</p>
+
+<input [(ngModel)]="name" />
+
+<my-vue-web-comp [msg]="name" (msgChanged)="updateName($event.detail[0])"></my-vue-web-comp>
